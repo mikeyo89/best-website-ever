@@ -25,3 +25,29 @@ section {
 .bg-header {
     background-color: #800000;
 }
+
+.pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentWrap {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    font-size: small;
+    color:white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #800000;
+    border-top: salmon solid;
+    font-weight: 200;
+} 
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
