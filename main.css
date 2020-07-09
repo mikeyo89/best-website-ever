@@ -28,3 +28,8 @@
     background-color: rgb(235, 182, 176);
     border-top:black solid;
 }
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
