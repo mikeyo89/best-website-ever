@@ -1,23 +1,11 @@
-
- *{margin: 0; padding: 0;}
- .container{
-    height: 1000px;
-    width: 100%;
-
-}
- .banner{
-    /* position:absolute;  */
-    /* left:20;  */
+.banner{
     margin:0 auto;
     width:100%; 
     height: 300px; 
 }
-/* .banner img{ 
-    width: 100px;
-} */
+
 .heading{ 
-    color:white; 
-    /* position:absolute; */
+    color:white;
     padding-top:150px;
     width:100%; 
     text-align: center;
@@ -27,7 +15,7 @@
 }
 
 .desserts-banner{
-    background-image: url("homemade-tiramisu-2.jpg");  
+    background-image: url("../img/homemade-tiramisu-2.jpg");  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +28,6 @@
     color: #fff;
     display: block;
     font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-    /* padding: 24px 15px; */
     text-align: center;
     width: 100%;
     
