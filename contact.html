@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Contact Us | Marco's Corner</title>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="contentWrap">
+            
+    <header class="bg-header">
+        <div class="container shadow">
+            <a href="index.html" class="heading"><img src="static/img/main-menu-pizza.jpg" class="img-header"></a>
+            <a href="index.html" class="heading">Marco's Corner</a>
+        </div>
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main shadow">
+        <section class="h1">Contact Us</section>
+        <p>Reach us using the form below.</p>
+        <br>
+        <div class="row">
+            <form class="col s12" action="success.html">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="comment" class="materialize-textarea" required></textarea>
+                              <label for="comment">Comments</label>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn red darken-4">Submit</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+    </main>
+
+    <footer>
+        
+        <div class="footer">
+            <br>
+            <div class="footerLinks">
+                <a href="Menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a><br>
+            </div>            
+                <p>&copy; 2020 Restaurant Name Goes Here. All Rights Reserved.</p>    
+        </div>    
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+    </script>
+</body>
+</html>

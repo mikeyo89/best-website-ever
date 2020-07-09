@@ -1,0 +1,86 @@
+.main {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+section {
+    color: #800000;
+}
+
+.img-header {
+    padding: 10px;
+    max-width: 15%;
+    min-width: 100px;
+}
+
+.heading {
+    color: white;
+    font-size: x-large;
+    padding-left: 30px;
+}
+
+.bg-header {
+    background-color: #800000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: red;
+}
+
+  /* label underline focus color */
+.input-field input[type=text] {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+.input-field input[type=email] {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+.input-field textarea {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid darkgreen;
+    box-shadow: 0 1px 0 0 darkgreen;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+.pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentWrap {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    font-size: small;
+    color:white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #800000;
+    border-top: salmon solid;
+    font-weight: 200;
+} 
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
