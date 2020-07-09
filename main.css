@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    padding: 15px;
+    padding: 20px;
 }
 
 section {
@@ -24,4 +24,37 @@ section {
 
 .bg-header {
     background-color: #800000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: red;
+}
+
+  /* label underline focus color */
+.input-field input[type=text] {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+.input-field input[type=email] {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+.input-field textarea {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid darkgreen;
+    box-shadow: 0 1px 0 0 darkgreen;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid darkred;
+    box-shadow: 0 1px 0 0 darkred;
 }
