@@ -5,27 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Contact Us | Marco's Corner</title>
 </head>
 <body>
-    <header class="bg-dark">
+    <header class="bg-header">
         <div class="container shadow">
             <img src="static/img/main-menu-pizza.jpg" class="img-header">
             <a href="index.html" class="heading">Marco's Corner</a>
         </div>
         <nav>
-            <!-- nav content goes here -->
+            <a href="menu.html">Menu</a> | 
         </nav>
     </header>
 
-    <main class="main shadow-sm">
+    <main class="main shadow">
         <section class="h1">Contact Us</section>
         <p>Would you like to contact us?</p>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">Spaghetti</div>
+                <div class="collapsible-body">
+                    <span>lol</span>
+                </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Pizza</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
     </main>
 
     <footer>
         <!-- footer content goes here -->
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+    </script>
 </body>
 </html>
