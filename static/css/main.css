@@ -33,6 +33,10 @@ section {
     background-color: #800000;
 }
 
+.bg-nav-color {
+    background-color: #676767;
+}
+
 .input-field input[type=text]:focus + label {
     color: red;
 }

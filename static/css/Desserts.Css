@@ -2,6 +2,10 @@ body {
     font-family: Calibri, 'Courier New', Courier, monospace;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
 *{margin: 0; padding: 0;}
 
  .banner{
@@ -39,6 +43,10 @@ body {
 
 .bg-header {
     background-color: #800000;
+}
+
+.bg-nav-color {
+    background-color: #676767;
 }
 /* End Header CSS */
 
