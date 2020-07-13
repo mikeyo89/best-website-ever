@@ -1,5 +1,6 @@
 body {
-    font-family: Calibri, 'Courier New', Courier, monospace;
+    font-family: 'Calibri', 'Courier New', Courier, monospace;
+    background-color: olive;
 }
 
 .main {
@@ -9,6 +10,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
+    background-color: #fff;
 }
 
 section {
@@ -21,7 +23,7 @@ section {
     min-width: 100px;
 }
 
-.heading {
+.header {
     color: white;
     font-size: x-large;
     padding-left: 30px;
@@ -108,7 +110,6 @@ h1.heading{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-     
 }
 
 .desserts-text{
@@ -121,9 +122,65 @@ h1.heading{
     width: 100%;
 }
 
-@media only screen and (max-width: 425px) {
-    .heading {
-        font-size: large;
+@media only screen and (max-width: 426px) {
+    div.h4 {
+        font-size: medium;
+    }
+
+    div.h5 {
+        font-size: small;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .header {
+        font-size: medium;
         padding-left: 20px;
+    }
+
+    .img-header {
+        padding: 10px;
+        max-width: 15%;
+        min-width: 100px;
+    }
+
+    .center {
+        position: absolute;
+        margin-top: 20px;
+        transform: translate(-50%, -50%);
+        font-size: 100%;
+        color: rgb(255, 255, 255);
+        font-family: cursive;
+    }
+
+    .eating {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 427px) {
+    p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .header {
+        font-size: xx-large;
+        padding-left: 40px;
+    }
+
+    .img-header {
+        padding: 20px;
+        max-width: 25%;
+        min-width: 100px;
     }
 }

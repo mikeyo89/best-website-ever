@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/home.css">
-    <link rel="stylesheet" href="static/css/Desserts.Css">
-    <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Success | Marco's Corner</title>
+    <title>Home | Marco's Corner</title>
 </head>
 <body>
     <header class="bg-header">
@@ -21,16 +19,16 @@
         </div>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="sidenav-trigger" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="waves-effect text-decoration-none hoverable" href="index.html">Home</a></li>
+                    <li class="active"><a class="waves-effect text-decoration-none hoverable" href="index.html">Home</a></li>
                     <li><a class="waves-effect text-decoration-none hoverable" href="menu.html">Menu</a></li>
                     <li><a class="waves-effect text-decoration-none hoverable" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
 
-        <ul class="sidenav" id="sidenav-trigger">
+        <ul class="sidenav" id="mobile">
             <li><a class="subheader">Marco's Corner</a></li>
             <li><a class="waves-effect text-decoration-none hoverable" href="index.html">Home</a></li>
             <li><a class="waves-effect text-decoration-none hoverable" href="menu.html">Menu</a></li>
@@ -38,16 +36,51 @@
         </ul>
     </header>
 
-    <main class="main card">
-        <section class="h1">Success!</section>
-        <p>Your message was sent! We will get back to you in 2-4 business hours.</p>
+    <div class="main Locationandnumber shadow-lg">
+        <div class="row">
+            <div class="col-4 h4">
+                Address:
+            </div>
+            <div class="col-4 h4">
+                Phone:
+            </div>
+            <div class="col-4 h4">
+                Hours:
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 h5">
+                1235 Honeyberry Lane<br>Cranberry, TA 20535
+            </div>
+            <div class="col-4 h5">
+                (379) 937-2947
+            </div>
+            <div class="col-4 h5">
+                Monday-Sunday: 9:00am - 10:00pm
+            </div>
+        </div>
+    </div>
+    
+    <main class="main shadow-lg"><br>
+        <div class="container">
+            <img src="https://www.azamara.com/sites/default/files/heros/gettyimages-891284194_1.jpg" class="responsive shadow-lg">
+            <div class="center">Where Eating is Always a Pleasure.</div>
+        </div><br>
+        <div class="About">
+            <h2 style="text-align: center;">What is Marco's Corner About?</h2>
+            <p>Our restaurant aims to be every familys go-to on any night and on any occasion, whether that is simply wanting some take out or wanting to celebrate a birthday. 
+                Come and check out our fresh dishes, and catch yourself becoming a regular! You can always make sure to take some food home as well!
+            </p>
+        </div>
         <br>
-        <a href="contact.html"><button class="btn red darken-4 waves-effect hoverable">Send another</button></a>
+        <div class="flex-container">
+            <img src="https://humpbackeye.files.wordpress.com/2013/10/fallon-olive-garden-2.jpg?w=833" class="z-depth-3 eating">
+        </div><br>
     </main>
 
     <footer>
         <div class="footer">
-    
             <div class="footerLinks">
                 <a href="index.html">Home</a>
                 <a href="Menu.html">Menu</a>
@@ -56,12 +89,11 @@
                 <p>&copy; 2020 Marco's Corner. All Rights Reserved.</p><br>
         </div>    
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
         });
     </script>
-</body>
+
 </html>

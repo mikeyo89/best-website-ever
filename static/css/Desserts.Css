@@ -1,3 +1,7 @@
+body {
+    font-family: Calibri, 'Courier New', Courier, monospace;
+}
+
 *{margin: 0; padding: 0;}
 
  .banner{
@@ -10,15 +14,33 @@
     display: block;
  }
 
-.heading{ 
+.heading { 
     position: absolute;
+    margin-top: auto;
     text-align: center;
     color: white; 
-    font-size: 80px;
-    font-family: c"Jazz LET, fantasy";
-    width:100%; 
+    font-size: 75px;
+    font-family: "Jazz LET", "fantasy";
+    width: 100%; 
     letter-spacing: 3px;
 }
+/* Header CSS */
+.header {
+    color: white;
+    font-size: x-large;
+    padding-left: 30px;
+}
+
+.img-header {
+    padding: 10px;
+    max-width: 15%;
+    min-width: 100px;
+}
+
+.bg-header {
+    background-color: #800000;
+}
+/* End Header CSS */
 
 .container{
     overflow: visible;
@@ -58,7 +80,8 @@
 }
 
 .pasta-text{
-    position:relative;
+    position :relative;
+    margin-top: -43px;
     background: rgb(32, 102, 100);
     border-radius: 6px;
     color: #fff;
@@ -71,6 +94,7 @@
     padding-bottom: 25px;
     z-index: 0;
 }
+
 .pizza-box{
     background-color: rgb(63,37,11,0.6);
 }
@@ -91,8 +115,10 @@
     top: 200px;
     z-index: 9;   
 }
+
 .pizza-text{
     position:relative;
+    margin-top: -43px;
     background: rgb(63,37,11);
     border-radius: 6px;
     color: #fff;
@@ -106,9 +132,11 @@
     border-bottom: solid 2px #580000;
     z-index: 2;
 }
+
 .dessert-box{
     background-color: rgb(150, 67, 67,0.6);
 }
+
 .desserts-banner{
     background-image: url("../img/homemade-tiramisu-2.jpg");  
     background-position: center;
@@ -129,6 +157,7 @@
 
 .desserts-text{
     position:relative;
+    margin-top: -43px;
     background: rgb(150, 67, 67);
     border-radius: 6px;
     color: #fff;
@@ -143,7 +172,82 @@
     z-index: 1;
 }
 
+.footer {
+    font-size: small;
+    color:white;
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #800000;
+    border-top: salmon solid;
+    font-weight: 2000;
+} 
 
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
 
+@media only screen and (max-width: 426px) {
+    div.h4 {
+        font-size: medium;
+    }
 
+    div.h5 {
+        font-size: small;
+    }
 
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .header {
+        font-size: medium;
+        padding-left: 20px;
+    }
+
+    .img-header {
+        padding: 10px;
+        max-width: 15%;
+        min-width: 100px;
+    }
+
+    .center {
+        position: absolute;
+        margin-top: 20px;
+        transform: translate(-50%, -50%);
+        font-size: 100%;
+        color: rgb(255, 255, 255);
+        font-family: cursive;
+    }
+
+    .eating {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 427px) {
+    p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .header {
+        font-size: xx-large;
+        padding-left: 40px;
+    }
+
+    .img-header {
+        padding: 20px;
+        max-width: 25%;
+        min-width: 100px;
+    }
+}
