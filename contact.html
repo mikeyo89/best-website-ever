@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Contact Us | Marco's Corner</title>
@@ -13,23 +14,37 @@
 <body>            
     <header class="bg-header">
         <div class="container shadow">
-            <a href="index.html" class="heading"><img src="static/img/main-menu-pizza.jpg" class="img-header"></a>
-            <a href="index.html" class="heading">Marco's Corner</a>
+            <a href="index.html" class="header"><img src="static/img/main-menu-pizza.jpg" class="img-header"></a>
+            <a href="index.html" class="header">Marco's Corner</a>
         </div>
         <nav>
             <div class="nav-wrapper">
+                <a href="#" data-target="sidenav-trigger" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+<<<<<<< HEAD
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="orderOnline.html">Order Online</a></li>
+=======
+                    <li><a class="waves-effect text-decoration-none hoverable" href="index.html">Home</a></li>
+                    <li><a class="waves-effect text-decoration-none hoverable" href="Menu.html">Menu</a></li>
+                    <li class="active"><a class="waves-effect text-decoration-none hoverable" href="contact.html">Contact Us</a></li>
+>>>>>>> 81707e31b92d7a8aac3eda445170d901fea827ed
                 </ul>
             </div>
         </nav>
+
+        <ul class="sidenav" id="sidenav-trigger">
+            <li><a class="subheader">Marco's Corner</a></li>
+            <li><a class="waves-effect text-decoration-none hoverable" href="index.html">Home</a></li>
+            <li><a class="waves-effect text-decoration-none hoverable" href="Menu.html">Menu</a></li>
+            <li><a class="waves-effect text-decoration-none hoverable" href="contact.html">Contact Us</a></li>
+        </ul>
     </header>
 
     <main class="main shadow">
         <section class="h1">Contact Us</section>
-        <p>Reach us using the form below.</p>
+        <p style="font-size: larger;">Reach us using the form below.</p>
         <br>
         <div class="row">
             <form class="col s12" action="success.html">
@@ -61,7 +76,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button class="btn red darken-4">Submit</button>
+                        <button class="btn red darken-4 waves-effect hoverable">Submit</button>
                     </div>
                 </div>
             </form>
@@ -70,20 +85,20 @@
 
     <footer>
         <div class="footer">
-
             <div class="footerLinks">
+                <a href="index.html">Home</a>
                 <a href="Menu.html">Menu</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="orderOnline.html">Order Online</a>
                 <br>
             </div>            
-                <p>&copy; 2020 Marco's Corner. All Rights Reserved.</p>    
+                <p>&copy; 2020 Marco's Corner. All Rights Reserved.</p><br>
         </div>    
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.collapsible');
-            var instances = M.Collapsible.init(elems);
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
         });
     </script>
 </body>
