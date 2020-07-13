@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/orderOnline.css">
+    <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Order Online | Marco's Corner</title>
+</head>
+
+<body>
+    <header class="bg-header">
+        <div class="container shadow">
+            <a href="index.html" class="heading"><img src="static/img/main-menu-pizza.jpg" class="img-header"></a>
+            <a href="index.html" class="heading">Marco's Corner</a>
+        </div>
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="orderOnline.html">Order Online</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!--    <section class="pizzaheader">
+        <img src="static/img/pizza-order-online-header.jpg">
+
+    </section>
+-->        
+    <main class="main shadow">
+        <section class="h1">Order Online</section>
+        <p>Place an order using the form below.</p>
+        <br>
+        <div class="row">
+            <form class="col s12" action="Menu.html">
+            <div class="row">
+                <br>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+                
+        <!--        <input type="radio" name="delivery" value="takeout" id="takeout">
+                <label for="takeout">Takeout</label>
+                <br>
+                <input type="radio" name="delivery" value="delivery" id="delivery">
+                <label for="delivery">Delivery</label>
+        -->
+            <div class="row">
+                <input type="text" name="address" placeholder="Street address" required>
+            </div>
+
+            <div class="row">
+                <input type="text" name="building" placeholder="Apt, Suite, Unit, Building (optional)">
+            </div>
+
+            <div class="row">
+                <input type="text" name="city" placeholder="City" required>
+            </div>
+
+            <div class="row">
+                <input type="text" name="state" placeholder="State" required>
+            </div>
+
+            <div class="row">
+                <input type="text" name="zipcode" placeholder="ZIP Code" required>
+            </div>
+
+            <div class="row">
+                <input type="text" name="number" placeholder="Phone Number" required>
+            </div>
+
+            <div class="row">
+                <p>Add Delivery Instructions (Optional)</p>
+                <textarea id="instructions" class="materialize-textarea" maxlength="120" placeholder="Do we need additional instructions to find this address?"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn red darken-4">Order Now</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerLinks">
+                <a href="Menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="orderOnline.html">Order Online</a>
+                <br>
+            </div>            
+                <p>&copy; 2020 Marco's Corner. All Rights Reserved.</p>    
+            </div>    
+    </footer>
+    
+</body>
+</html>
